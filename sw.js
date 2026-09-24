@@ -1,6 +1,6 @@
 // Grit – service worker: guarda la app para que abra rápido y sin conexión.
 // Sube VERSION cuando cambies archivos para forzar la actualización.
-const VERSION = "grit-v1";
+const VERSION = "grit-v2";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/logo.jpg",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
 

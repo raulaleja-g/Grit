@@ -51,6 +51,56 @@ body{margin:0;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-a
 .refresh{border:1px solid #333;background:#111;color:#ddd;border-radius:999px;padding:0 12px;min-height:32px;font-size:12.5px;cursor:pointer}
 .linkbtn{border:0;background:none;padding:0;color:var(--run);text-decoration:underline;text-underline-offset:2px;cursor:pointer;font-size:12.5px}
 #setup{display:grid;gap:12px}
+/* Ciclo */
+.cyc-now{display:grid;gap:10px}
+.cyc-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 14px}
+.cyc-top b{font-family:var(--f-display);font-size:30px;font-weight:600;line-height:1.05}
+.cyc-top .ph-name{display:inline-flex;align-items:center;gap:7px;font-weight:600}
+.ph-dot{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block}
+.strip{display:flex;gap:2px;height:12px}
+.strip span{flex:1;border-radius:2px;opacity:.35}
+.strip span.past{opacity:.75}
+.strip span.now{opacity:1;outline:2px solid var(--ink);outline-offset:1px}
+.strip-legend{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:12px;color:var(--muted)}
+.strip-legend span{display:inline-flex;align-items:center;gap:5px}
+.tips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.tips{grid-template-columns:1fr}}
+.tip-card{background:var(--sunk);border-radius:8px;padding:10px 12px;font-size:13.5px;color:var(--ink-2)}
+.tip-card b{display:block;color:var(--ink);font-size:12.5px;margin-bottom:2px}
+.cyc-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn2{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:0 14px;min-height:44px;font-weight:500;cursor:pointer}
+.btn2.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cyc-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.cyc-form .full{grid-column:1/-1}
+details.more > summary{cursor:pointer;color:var(--run);font-size:13.5px;min-height:32px;display:flex;align-items:center}
+.hist{display:grid;border:1px solid var(--line);border-radius:8px}
+.hist div{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 10px;border-bottom:1px solid var(--line);font-size:13.5px}
+.hist div:last-child{border-bottom:0}
+.hist .acts{display:flex;gap:10px}
+.callout{border-left:3px solid var(--ph,#c2415b);background:var(--sunk);border-radius:6px;padding:8px 10px;font-size:13.5px;color:var(--ink-2)}
+.callout b{color:var(--ink)}
+.dnum .ph-dot{width:7px;height:7px;margin-top:3px}
+/* Nutrición */
+.macros{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.macros{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.macro{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.macro .label{font-size:12.5px;color:var(--ink-2);font-weight:500}
+.macro .val{font-family:var(--f-display);font-size:28px;font-weight:600;line-height:1.1}
+.macro .val small{font-size:14px;color:var(--muted);margin-left:3px}
+.nut-notes{margin:0;padding-left:18px;display:grid;gap:3px;font-size:13.5px;color:var(--ink-2)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:0 12px;min-height:34px;font-size:13px;cursor:pointer;color:var(--ink-2)}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.meals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:620px){.meals{grid-template-columns:1fr}}
+.meal{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:5px;align-content:start}
+.meal-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.meal-head b{font-weight:600}
+.meal .mtype{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
+.meal .mm{font-family:var(--f-mono);font-size:12px;color:var(--ink-2)}
+.meal p{margin:0;font-size:13.5px;color:var(--ink-2)}
+.meal .why{font-size:12.5px;color:var(--muted)}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--ink-2);justify-self:start}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
 html,body{max-width:100%;overflow-x:hidden}
 .wrap{max-width:880px;margin:0 auto;padding-inline:16px;padding-block:24px 56px;display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
@@ -182,7 +232,7 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
 <div class="wrap">
   <header class="brand">
     <img src="icons/logo.jpg" alt="Grit" width="720" height="615">
-    <div class="brand-meta"><span class="eyebrow" id="sync">Conectando…</span><button class="refresh" id="refresh">Actualizar</button></div>
+    <div class="brand-meta"><span class="eyebrow" id="who" hidden></span><span class="eyebrow" id="sync">Conectando…</span><button class="refresh" id="refresh">Actualizar</button></div>
   </header>
 
   <section id="setup" class="panel" hidden aria-labelledby="h-setup">
@@ -215,12 +265,28 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
       <div class="pips" id="k-str-pips" aria-hidden="true"></div>
     </div>
     <div class="kpi">
-      <div class="label">Carreras en Z2</div>
+      <div class="label" id="k-z2-label">Carreras en Z2</div>
       <div class="val num" id="k-z2">–</div>
     </div>
   </section>
 
-  <section id="coach-sec" hidden aria-labelledby="h-coach">
+  <section id="cycle-sec" class="panel" hidden data-auto aria-labelledby="h-cycle">
+    <div class="section-head"><h2 id="h-cycle">Ciclo</h2><span class="muted" style="font-size:13px">El plan y la comida se ajustan a tu fase</span></div>
+    <div class="cyc-now" id="cyc-now"></div>
+    <div class="cyc-actions" id="cyc-actions" style="margin-top:12px"></div>
+    <details class="more" id="cyc-more" style="margin-top:8px">
+      <summary>Registrar o corregir fechas</summary>
+      <div class="cyc-form" style="margin-top:8px">
+        <label class="field" for="cyc-start">Primer día del periodo<input id="cyc-start" type="date"></label>
+        <label class="field" for="cyc-end">Último día (opcional)<input id="cyc-end" type="date"></label>
+        <label class="field full" for="cyc-note">Nota (dolor, síntomas)<input id="cyc-note" type="text" maxlength="200" placeholder="Ej.: día 1 con mucho dolor"></label>
+        <div class="save-row full"><button class="save" id="cyc-save">Guardar periodo</button><button class="btn2" id="cyc-cancel" hidden>Cancelar</button><span class="save-msg" id="cyc-msg"></span></div>
+      </div>
+      <div style="margin-top:12px"><div class="eyebrow" style="margin-bottom:6px">Periodos registrados</div><div id="cyc-hist"></div></div>
+    </details>
+  </section>
+
+  <section id="coach-sec" hidden data-auto aria-labelledby="h-coach">
     <div class="section-head"><h2 id="h-coach">Notas de la semana</h2></div>
     <div class="coach" id="coach"></div>
   </section>
@@ -232,6 +298,15 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     </div>
     <div class="days" id="days"><div class="state">Cargando plan…</div></div>
     <p class="general" id="general" style="margin-top:10px"></p>
+  </section>
+
+  <section id="nut-sec" hidden data-auto aria-labelledby="h-nut">
+    <div class="section-head"><h2 id="h-nut">Nutrición</h2><span class="muted" style="font-size:13px" id="nut-sub">Objetivo diario</span></div>
+    <div class="macros" id="nut-macros"></div>
+    <div id="nut-phase" style="margin-top:10px"></div>
+    <ul class="nut-notes" id="nut-notes" style="margin-top:10px"></ul>
+    <div class="chips" id="nut-chips" role="group" aria-label="Filtrar comidas" style="margin:14px 0 10px"></div>
+    <div class="meals" id="nut-meals"></div>
   </section>
 
   <section class="panel" aria-labelledby="h-chart">
@@ -257,18 +332,20 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     <div id="list"><div class="state">Cargando actividades…</div></div>
   </section>
 
-  <footer>Garmin → intervals.icu → Google Sheet cada noche a las 22:00; Grit lee la hoja directamente. Claude revisa el plan los domingos por la tarde con los pesos y repeticiones que guardas aquí. Zona según FC media (Z2 = 144–159). <button class="linkbtn" id="cfg-open">Cambiar conexión</button></footer>
+  <footer>Garmin → intervals.icu → Google Sheet cada noche a las 22:00; Grit lee la hoja directamente. Claude revisa el plan los domingos por la tarde con los pesos y repeticiones que guardas aquí. Zona según FC media (<span id="z2-range">Z2 = 144–159</span>). <button class="linkbtn" id="cfg-open">Cambiar conexión</button></footer>
 </div>
 
 <script>
 (() => {
-  const RACES = [
+  // Valores por defecto (Raúl). Si la carpeta de planes tiene profile.json, se usan los de ese perfil.
+  const DEFAULT_RACES = [
     { d: "2025-10-12", label: "Múnich", full: "Maratón de Múnich · 4:23" },
     { d: "2026-05-16", label: "Hyrox", full: "Hyrox Mixed Doubles" },
     { d: "2026-08-01", label: "10k", full: "10k de Berlín · 53:09" },
     { d: "2026-09-13", label: "Bremen", full: "Maratón de Bremen · 4:53" },
   ];
-  const ZONES = [[0,143,"Z1"],[144,159,"Z2"],[160,174,"Z3"],[175,189,"Z4"],[190,999,"Z5"]];
+  const DEFAULT_ZONES = [[0,143,"Z1"],[144,159,"Z2"],[160,174,"Z3"],[175,189,"Z4"],[190,999,"Z5"]];
+  let RACES = DEFAULT_RACES, ZONES = DEFAULT_ZONES, profile = {}, cycles = [];
   const RUN = new Set(["Run","VirtualRun","TrailRun"]);
   const STR = new Set(["WeightTraining"]);
   const SKIP = new Set(["Transition"]);
@@ -292,7 +369,7 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
   const todayIso = iso(new Date());
   const thisWeek = monday(todayIso);
-  const BLOCK_START = "2026-09-21";
+  let BLOCK_START = "2026-09-21";
   let view = "12";
   try { const v = localStorage.getItem("grit-chart-view"); if (["12","8","now"].includes(v)) view = v; } catch (e) {}
   const syncRange = () => document.querySelectorAll("#range button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === view)));
@@ -407,7 +484,9 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
         const c = cat(a.t), z = zoneOf(a.hr);
         const det = c === "run" ? `${fmt(a.km)} km · ${pace(a.p)}/km · ${dur(a.min)}${a.hr ? ` · FC ${a.hr}${z ? " " + z : ""}` : ""}` : `${dur(a.min)}${a.hr ? ` · FC ${a.hr}` : ""}`;
         return `<div class="done ${c}"><b>Garmin · ${esc(TYPE_ES[a.t] || a.t)}</b><span class="num">${det}</span></div>`; }).join("")}</div>` : "";
-      let body = `${day.detail ? `<p class="presc">${esc(day.detail)}</p>` : ""}${doneHtml}`;
+      const ci = cycleInfo(d);
+      const d1 = ci && ci.day === 1 && ci.phase === "menstrual" && day.type !== "rest" && profile.cycle?.dayOne;
+      let body = `${d1 ? `<div class="callout" style="--ph:${PHASES.menstrual.color}"><b>Día 1 del periodo${ci.predicted ? " (estimado)" : ""}:</b> ${esc(profile.cycle.dayOne)}</div>` : ""}${day.detail ? `<p class="presc">${esc(day.detail)}</p>` : ""}${doneHtml}`;
       if (day.type === "fuerza" && day.exercises?.length) {
         const rpe = dr?.rpe ?? log?.rpe ?? "", note = dr?.note ?? log?.note ?? "";
         const msg = saveMsg[d];
@@ -421,7 +500,7 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
       }
       const kind = day.type === "fuerza" ? "fuerza" : day.type === "run" ? "run" : day.type === "otro" ? "otro" : "";
       return `<details class="day${d === todayIso ? " today" : ""}" data-d="${d}"${openDays.has(d) ? " open" : ""}>
-        <summary><span class="dnum"><span>${DOW[i]}</span><b>${parse(d).getDate()}</b></span>
+        <summary><span class="dnum"><span>${DOW[i]}</span><b>${parse(d).getDate()}</b>${ci ? `<i class="ph-dot" style="background:${PHASES[ci.phase].color}" title="Día ${ci.day} del ciclo · fase ${PHASES[ci.phase].label.toLowerCase()}${ci.predicted ? " (estimado)" : ""}"></i>` : ""}</span>
           <span class="dtitle"><b><i class="${kind}"></i>${esc(day.title)}</b>${day.short ? `<small>${esc(day.short)}</small>` : ""}</span>
           <span class="status ${stc}">${st}</span></summary>
         ${(body.trim() ? `<div class="dbody">${body}</div>` : "")}
@@ -515,9 +594,162 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     $("list").innerHTML = `<div class="alist">${body}</div>`;
   }
 
+  /* ---------- Ciclo ---------- */
+  const PHASES = {
+    menstrual:  { label: "Menstrual",  color: "#c2415b" },
+    folicular:  { label: "Folicular",  color: "#1baf7a" },
+    ovulatoria: { label: "Ovulatoria", color: "#d99a00" },
+    lutea:      { label: "Lútea",      color: "#7b5cd6" },
+  };
+  const diffDays = (a, b) => Math.round((parse(b) - parse(a)) / 86400000);
+  const cycleOn = () => !!profile.features?.cycle;
+  function cycleStats() {
+    const cs = [...cycles].sort((a, b) => a.start.localeCompare(b.start));
+    const gaps = [];
+    for (let i = 1; i < cs.length; i++) { const g = diffDays(cs[i-1].start, cs[i].start); if (g >= 21 && g <= 45) gaps.push(g); }
+    const lens = cs.filter(c => c.end).map(c => diffDays(c.start, c.end) + 1).filter(n => n >= 2 && n <= 10);
+    const avg = (arr, dflt) => arr.length ? Math.round(arr.slice(-6).reduce((s, n) => s + n, 0) / Math.min(arr.length, 6)) : dflt;
+    return { cs, L: avg(gaps, profile.cycle?.length || 28), P: avg(lens, profile.cycle?.period || 5) };
+  }
+  function phaseFor(day, L, P, inPeriod) {
+    const ovu = L - 14;
+    if (inPeriod ?? day <= P) return "menstrual";
+    if (day < ovu - 2) return "folicular";
+    if (day <= ovu + 1) return "ovulatoria";
+    return "lutea";
+  }
+  // Día del ciclo y fase para una fecha. Para fechas futuras proyecta ciclos con la duración media.
+  function cycleInfo(d) {
+    if (!cycleOn()) return null;
+    const { cs, L, P } = cycleStats();
+    const prev = cs.filter(c => c.start <= d);
+    if (!prev.length) return null;
+    const last = prev[prev.length - 1];
+    let day = diffDays(last.start, d) + 1, predicted = false, start = last.start;
+    if (day > L && d > todayIso) { const k = Math.floor((day - 1) / L); day -= k * L; start = addDays(start, k * L); predicted = true; }
+    const inPeriod = !predicted && last.end ? d <= last.end : null;
+    const late = !predicted && day > L;
+    return { day, L, P, start, predicted, late, phase: phaseFor(day, L, P, inPeriod), next: late ? null : addDays(start, L), open: !last.end && diffDays(last.start, todayIso) < 10 ? last : null };
+  }
+
+  function renderCycle() {
+    const on = cycleOn();
+    $("cycle-sec").hidden = !on || !$("setup").hidden;
+    if (!on) return;
+    const ci = cycleInfo(todayIso);
+    const tips = profile.cycle?.phases || {};
+    if (!ci) {
+      $("cyc-now").innerHTML = `<p class="general" style="margin:0">Registra el primer día de tu último periodo para ver en qué fase estás. Con 2–3 periodos registrados, las fechas estimadas se ajustan a tu ciclo real.</p>`;
+    } else {
+      const ph = PHASES[ci.phase], L = ci.L;
+      let strip = "";
+      for (let i = 1; i <= L; i++) {
+        const p = phaseFor(i, L, ci.P);
+        strip += `<span class="${i < ci.day ? "past" : ""}${i === ci.day ? " now" : ""}" style="background:${PHASES[p].color}" title="Día ${i} · ${PHASES[p].label}"></span>`;
+      }
+      const t = tips[ci.phase] || {};
+      $("cyc-now").innerHTML = `
+        <div class="cyc-top"><b class="num">Día ${ci.day}</b>
+          <span class="ph-name"><span class="ph-dot" style="background:${ph.color}"></span>Fase ${ph.label.toLowerCase()}</span>
+          <span class="muted" style="font-size:13px">${ci.late ? `El periodo se esperaba hace ${ci.day - L} día${ci.day - L === 1 ? "" : "s"}. ¿Ya empezó? Regístralo.` : `Próximo periodo: ~${dLabel(ci.next)} · ciclo de ${L} días`}</span></div>
+        <div class="strip" aria-hidden="true">${strip}</div>
+        <div class="strip-legend">${Object.values(PHASES).map(p => `<span><i class="ph-dot" style="background:${p.color}"></i>${p.label}</span>`).join("")}</div>
+        ${(t.train || t.food) ? `<div class="tips">${t.train ? `<div class="tip-card"><b>Entreno en esta fase</b>${esc(t.train)}</div>` : ""}${t.food ? `<div class="tip-card"><b>Comida en esta fase</b>${esc(t.food)}</div>` : ""}</div>` : ""}`;
+    }
+    const open = ci?.open;
+    $("cyc-actions").innerHTML = open
+      ? `<button class="btn2 primary" data-cyc="end">Terminó hoy</button><span class="muted" style="font-size:13px">Periodo desde el ${dLabel(open.start)}</span>`
+      : `<button class="btn2 primary" data-cyc="start">Me empezó hoy</button>`;
+    const hist = [...cycles].sort((a, b) => b.start.localeCompare(a.start)).slice(0, 6);
+    $("cyc-hist").innerHTML = hist.length ? `<div class="hist">${hist.map(c => `<div><span class="num">${dLabel(c.start)}${c.end ? " – " + dLabel(c.end) : " – …"}${c.note ? ` <span class="muted">· ${esc(c.note)}</span>` : ""}</span>
+      <span class="acts"><button class="linkbtn" data-cyc-edit="${c.start}">Editar</button><button class="linkbtn" data-cyc-del="${c.start}">${delArm === c.start ? "¿Borrar? Toca otra vez" : "Borrar"}</button></span></div>`).join("")}</div>` : `<p class="general" style="margin:0">Todavía no hay periodos registrados.</p>`;
+  }
+  let cycEdit = null, delArm = null;
+  async function saveCycle(cycle, prevStart, msgEl) {
+    if (!cfg) return;
+    if (msgEl) { msgEl.textContent = "Guardando…"; msgEl.className = "save-msg"; }
+    try {
+      const r = await api("POST", { action: "saveCycle", cycle, prevStart });
+      cycles = r.cycles || cycles; cacheField("cycles", cycles);
+      if (msgEl) { msgEl.textContent = "Guardado"; msgEl.className = "save-msg ok"; }
+      return true;
+    } catch (e) {
+      if (msgEl) { msgEl.textContent = e.message === "datos" ? "Revisa las fechas: el último día no puede ser antes del primero." : "No se pudo guardar. Revisa la conexión."; msgEl.className = "save-msg err"; }
+      return false;
+    } finally { renderAll(); }
+  }
+  $("cyc-actions").addEventListener("click", async e => {
+    const b = e.target.closest("[data-cyc]"); if (!b) return;
+    b.disabled = true;
+    if (b.dataset.cyc === "start") await saveCycle({ start: todayIso });
+    else { const o = cycleInfo(todayIso)?.open; if (o) await saveCycle({ start: o.start, end: todayIso, note: o.note || "" }, o.start); }
+  });
+  $("cyc-save").addEventListener("click", async () => {
+    const start = $("cyc-start").value, end = $("cyc-end").value, note = $("cyc-note").value.trim();
+    if (!start) { $("cyc-msg").textContent = "Pon al menos el primer día."; $("cyc-msg").className = "save-msg err"; return; }
+    if (end && end < start) { $("cyc-msg").textContent = "El último día no puede ser antes del primero."; $("cyc-msg").className = "save-msg err"; return; }
+    const ok = await saveCycle({ start, end, note }, cycEdit || undefined, $("cyc-msg"));
+    if (ok) { cycEdit = null; ["cyc-start","cyc-end","cyc-note"].forEach(id => $(id).value = ""); $("cyc-cancel").hidden = true; }
+  });
+  $("cyc-cancel").addEventListener("click", () => { cycEdit = null; ["cyc-start","cyc-end","cyc-note"].forEach(id => $(id).value = ""); $("cyc-cancel").hidden = true; $("cyc-msg").textContent = ""; });
+  $("cyc-hist").addEventListener("click", async e => {
+    const ed = e.target.closest("[data-cyc-edit]"), del = e.target.closest("[data-cyc-del]");
+    if (ed) {
+      const c = cycles.find(x => x.start === ed.dataset.cycEdit); if (!c) return;
+      cycEdit = c.start; $("cyc-start").value = c.start; $("cyc-end").value = c.end || ""; $("cyc-note").value = c.note || "";
+      $("cyc-cancel").hidden = false; $("cyc-msg").textContent = "Editando el periodo del " + dLabel(c.start); $("cyc-msg").className = "save-msg";
+      $("cyc-start").focus();
+    }
+    if (del) {
+      const st = del.dataset.cycDel;
+      if (delArm !== st) { delArm = st; renderCycle(); setTimeout(() => { if (delArm === st) { delArm = null; renderCycle(); } }, 4000); return; }
+      delArm = null;
+      try { const r = await api("POST", { action: "deleteCycle", start: st }); cycles = r.cycles || []; cacheField("cycles", cycles); } catch (err) {}
+      renderAll();
+    }
+  });
+
+  /* ---------- Nutrición ---------- */
+  const MEAL_TYPES = [["desayuno","Desayuno"],["almuerzo","Almuerzo"],["cena","Cena"],["snack","Snack"]];
+  let mealFilter = "todos", mealsAll = false;
+  try { mealFilter = localStorage.getItem("grit-meal-filter") || "todos"; } catch (e) {}
+  function renderNutrition() {
+    const n = weekDoc(thisWeek)?.nutrition || profile.nutrition;
+    $("nut-sec").hidden = !n || !$("setup").hidden;
+    if (!n) return;
+    const ci = cycleInfo(todayIso), ph = ci?.phase;
+    const extra = ph === "lutea" && n.lutealExtraKcal ? n.lutealExtraKcal : 0;
+    const t = [["Calorías", (n.kcal || 0) + extra, "kcal"], ["Proteína", n.protein, "g"], ["Carbohidratos", n.carbs, "g"], ["Grasa", n.fat, "g"]];
+    $("nut-macros").innerHTML = t.filter(x => x[1]).map(([l, v, u]) => `<div class="macro"><div class="label">${l}</div><div class="val num">${fmt(v, 0)}<small>${u}</small></div></div>`).join("");
+    $("nut-sub").textContent = extra ? `Objetivo diario · +${extra} kcal en fase lútea` : (n.goal || "Objetivo diario");
+    const pn = ph && n.phaseNotes?.[ph];
+    $("nut-phase").innerHTML = pn ? `<div class="callout" style="--ph:${PHASES[ph].color}"><b>Fase ${PHASES[ph].label.toLowerCase()}:</b> ${esc(pn)}</div>` : "";
+    $("nut-notes").innerHTML = (n.notes || []).map(x => `<li>${esc(x)}</li>`).join("");
+    $("nut-notes").hidden = !(n.notes || []).length;
+    const meals = n.meals || [];
+    const types = MEAL_TYPES.filter(([k]) => meals.some(m => m.type === k));
+    if (mealFilter !== "todos" && !types.some(([k]) => k === mealFilter)) mealFilter = "todos";
+    $("nut-chips").innerHTML = [["todos","Todos"], ...types].map(([k, l]) => `<button data-mf="${k}" aria-pressed="${k === mealFilter}">${l}</button>`).join("");
+    const good = m => ph && (m.phases || []).includes(ph);
+    const list = meals.filter(m => mealFilter === "todos" || m.type === mealFilter)
+      .map((m, i) => ({ m, i })).sort((a, b) => (good(b.m) - good(a.m)) || a.i - b.i).map(x => x.m);
+    const tl = Object.fromEntries(MEAL_TYPES);
+    const shown = mealsAll ? list : list.slice(0, 4);
+    $("nut-meals").innerHTML = (list.length ? shown.map(m => `<article class="meal">
+      <div class="meal-head"><b>${esc(m.name)}</b><span class="mtype">${esc(tl[m.type] || m.type || "")}</span></div>
+      <div class="mm num">${[m.kcal ? `${m.kcal} kcal` : "", m.p != null ? `P ${m.p} g` : "", m.c != null ? `C ${m.c} g` : "", m.f != null ? `G ${m.f} g` : ""].filter(Boolean).join(" · ")}</div>
+      ${good(m) ? `<span class="badge"><i class="ph-dot" style="background:${PHASES[ph].color}"></i>Ideal para tu fase</span>` : ""}
+      ${m.ingredients ? `<p>${esc(m.ingredients)}</p>` : ""}
+      ${m.why ? `<div class="why">${esc(m.why)}</div>` : ""}
+    </article>`).join("") : `<div class="state">Sin comidas para este filtro.</div>`)
+      + (list.length > 4 ? `<button class="btn2" id="meals-more" style="grid-column:1/-1">${mealsAll ? "Ver menos" : `Ver todas (${list.length})`}</button>` : "");
+  }
+  $("nut-meals").addEventListener("click", e => { if (e.target.id === "meals-more") { mealsAll = !mealsAll; renderNutrition(); } });
+  $("nut-chips").addEventListener("click", e => { const b = e.target.closest("[data-mf]"); if (!b) return; mealFilter = b.dataset.mf; try { localStorage.setItem("grit-meal-filter", mealFilter); } catch (err) {} renderNutrition(); });
+
   function renderAll() {
     const focusId = document.activeElement?.id;
-    renderNav(); renderKpis(); renderCoach(); renderDays(); renderChart(); renderList();
+    renderNav(); renderKpis(); renderCycle(); renderCoach(); renderDays(); renderNutrition(); renderChart(); renderList();
     if (focusId && focusId.startsWith("in-") || focusId?.startsWith("rpe-") || focusId?.startsWith("note-")) { const el = $(focusId); if (el) el.focus(); }
   }
 
@@ -597,7 +829,8 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
   renderAll();
 
   /* ---------- Datos (Apps Script) ---------- */
-  const CFG_KEY = "grit-config", CACHE_KEY = "grit-cache";
+  const CFG_KEY = "grit-config";
+  const cacheKey = () => "grit-cache:" + (cfg?.api || "");
   function loadCfg() {
     try {
       const h = new URLSearchParams(location.hash.slice(1));
@@ -619,6 +852,15 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     return j;
   }
   function applyData(j) {
+    profile = j.profile || {};
+    ZONES = Array.isArray(profile.zones) && profile.zones.length ? profile.zones : DEFAULT_ZONES;
+    RACES = Array.isArray(profile.races) ? profile.races : (j.profile ? [] : DEFAULT_RACES);
+    if (profile.blockStart) BLOCK_START = profile.blockStart;
+    cycles = j.cycles || [];
+    const z2 = ZONES.find(z => z[2] === "Z2");
+    if (z2) $("z2-range").textContent = `Z2 = ${z2[0]}–${z2[1]}`;
+    $("who").hidden = !profile.name; $("who").textContent = profile.name || "";
+    $("k-z2-label").textContent = z2 ? `Carreras en Z2 (${z2[0]}–${z2[1]})` : "Carreras en Z2";
     acts = j.activities || [];
     weeks = {}; Object.entries(j.weeks || {}).forEach(([k, v]) => { if (v) weeks[v.start || k] = v; });
     logs = j.logs || {};
@@ -626,14 +868,15 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     ready.months = ready.weeks = true;
   }
   let cached = null;
-  function cacheLogs() { if (!cached) return; cached.logs = logs; try { localStorage.setItem(CACHE_KEY, JSON.stringify(cached)); } catch (e) {} }
+  function cacheField(k, v) { if (!cached) return; cached[k] = v; try { localStorage.setItem(cacheKey(), JSON.stringify(cached)); } catch (e) {} }
+  function cacheLogs() { cacheField("logs", logs); }
   async function refresh() {
     if (!cfg) return;
     $("refresh").disabled = true; $("sync").textContent = "Actualizando…";
     try {
       const j = await api("GET");
-      cached = { activities: j.activities, weeks: j.weeks, logs: j.logs, lastSync: j.lastSync };
-      try { localStorage.setItem(CACHE_KEY, JSON.stringify(cached)); } catch (e) {}
+      cached = { profile: j.profile, activities: j.activities, weeks: j.weeks, logs: j.logs, cycles: j.cycles, lastSync: j.lastSync };
+      try { localStorage.setItem(cacheKey(), JSON.stringify(cached)); } catch (e) {}
       applyData(cached); offline = false; lastFetch = Date.now();
     } catch (e) {
       if (e.message === "clave") { $("refresh").disabled = false; showSetup("La clave no es válida."); return; }
@@ -650,7 +893,7 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     $("cfg-msg").textContent = msg || ""; $("cfg-msg").className = "save-msg" + (msg ? " err" : "");
   }
   function hideSetup() {
-    document.querySelectorAll(".wrap > *").forEach(el => { if (el.id !== "coach-sec") el.hidden = false; });
+    document.querySelectorAll(".wrap > *").forEach(el => { if (!el.hasAttribute("data-auto")) el.hidden = false; });
     $("setup").hidden = true;
   }
   $("cfg-save").addEventListener("click", async () => {
@@ -661,6 +904,8 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
     try {
       await api("GET");
       try { localStorage.setItem(CFG_KEY, JSON.stringify(cfg)); } catch (e) {}
+      cached = null; try { cached = JSON.parse(localStorage.getItem(cacheKey()) || "null"); } catch (e) {}
+      if (cached) applyData(cached);
       hideSetup(); renderAll(); refresh();
     } catch (e) {
       $("cfg-msg").textContent = e.message === "clave" ? "La clave no es válida." : "No se pudo conectar. Revisa la URL y que la implementación sea para “Cualquier persona”.";
@@ -672,7 +917,7 @@ footer{font-size:12.5px;color:var(--muted);max-width:68ch}
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && Date.now() - lastFetch > 60000) refresh(); });
 
   cfg = loadCfg();
-  try { cached = JSON.parse(localStorage.getItem(CACHE_KEY) || "null"); } catch (e) { cached = null; }
+  try { cached = cfg ? JSON.parse(localStorage.getItem(cacheKey()) || "null") : null; } catch (e) { cached = null; }
   if (cached) { applyData(cached); renderAll(); }
   if (!cfg) showSetup(); else refresh();
 
