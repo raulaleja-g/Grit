@@ -258,7 +258,10 @@ details.meal.nt > summary{grid-template-columns:minmax(0,1fr) auto}
 .recipe .mm{font-family:var(--f-mono);font-size:12px;color:var(--ink-2)}
 .badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--ink-2);justify-self:start;width:max-content;max-width:100%}
 .badge.prep{background:var(--warn-bg);color:var(--warn)}
-.prep-card{display:grid;gap:12px}
+.prep-card .prep-body{display:grid;gap:12px;margin-top:12px}
+.prep-card > summary .ptitle{display:grid;gap:2px}
+.prep-card > summary .ptitle small{color:var(--muted);font-size:13px}
+#f-body > .panel{margin-top:16px}
 .prep-card .makes{margin:0;padding-left:18px;display:grid;gap:3px;font-size:14px;color:var(--ink-2)}
 .groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 @media (max-width:620px){.groups{grid-template-columns:1fr}}
@@ -458,7 +461,7 @@ details.book[open] > summary .chev{transform:rotate(90deg)}
   const syncRange = () => document.querySelectorAll("#range button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === view)));
 
   let cfg = null, offline = false, lastFetch = 0, acts = [], weeks = {}, logs = {}, sync = null, sel = thisWeek, ready = { months: false, weeks: false };
-  let tday = todayIso, fday = todayIso, openMeal = null, setupMode = false;
+  let tday = todayIso, fday = todayIso, openMeal = null, prepOpen = null, setupMode = false;
   const saveMsg = {};
   let drafts = store.get("grit-drafts", {}) || {};
   const persistDrafts = () => store.set("grit-drafts", drafts);
@@ -680,6 +683,7 @@ details.book[open] > summary .chev{transform:rotate(90deg)}
     fday = todayIso; const v = b.dataset.gofood;
     openMeal = /^\d+$/.test(v) ? `${todayIso}:${v}` : null;
     showPage("food");
+    if (v === "prep") { prepOpen = todayIso; renderFood(); }
     const target = v === "prep" ? $("f-prep") : v === "free" ? $("f-shop") : openMeal ? document.querySelector(`[data-meal="${openMeal}"]`) : null;
     if (target) target.scrollIntoView({ block: "start" });
   });
@@ -872,13 +876,14 @@ details.book[open] > summary .chev{transform:rotate(90deg)}
     const prep = prepFor(n, fday);
     if (prep) {
       const done = new Set(store.get(prepKey(fday), []));
-      html += `<section class="panel prep-card" id="f-prep" aria-labelledby="h-prep">
-        <div class="section-head" style="margin:0"><h2 id="h-prep">${esc(prep.title)}</h2><span class="muted" style="font-size:13px">${esc(prep.when || "")}</span></div>
+      html += `<details class="book panel prep-card" id="f-prep"${prepOpen === fday ? " open" : ""}>
+        <summary><span class="ptitle"><h2>${esc(prep.title)}</h2>${prep.when ? `<small>${esc(prep.when)}</small>` : ""}</span><span class="chev">›</span></summary>
+        <div class="prep-body">
         ${prep.makes?.length ? `<ul class="makes">${prep.makes.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
         ${prep.groups?.length ? `<div><h3 style="margin-bottom:8px">Ingredientes</h3><div class="groups">${prep.groups.map(g => `<div class="group"><b>${esc(g.name)}</b><ul>${g.items.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}</div></div>` : ""}
         ${prep.steps?.length ? `<div><h3 style="margin-bottom:6px">Paso a paso</h3><ol class="checks">${prep.steps.map((x, k) => `<li><label><input type="checkbox" data-prep="${k}"${done.has(k) ? " checked" : ""}><span><span class="n">${k + 1}.</span>${esc(x)}</span></label></li>`).join("")}</ol></div>` : ""}
         ${prep.storage ? `<p class="general" style="font-size:13.5px">${esc(prep.storage)}</p>` : ""}
-      </section>`;
+      </div></details>`;
     }
     if (menu && !Array.isArray(menu) && n.shopping?.items?.length) {
       const got = new Set(store.get(shopKey(fday), []));
@@ -935,7 +940,7 @@ details.book[open] > summary .chev{transform:rotate(90deg)}
     if (e.target.closest("[data-shop-reset]")) { store.set(shopKey(fday), []); renderFood(); return; }
     const b = e.target.closest("[data-mf]"); if (b) { mealFilter = b.dataset.mf; store.set("grit-meal-filter", mealFilter); renderFood(); }
   });
-  $("f-body").addEventListener("toggle", e => { const k = e.target.dataset?.meal; if (!k) return; if (e.target.open) openMeal = k; else if (openMeal === k) openMeal = null; }, true);
+  $("f-body").addEventListener("toggle", e => { if (e.target.id === "f-prep") { prepOpen = e.target.open ? fday : null; return; } const k = e.target.dataset?.meal; if (!k) return; if (e.target.open) openMeal = k; else if (openMeal === k) openMeal = null; }, true);
 
   /* ---------- Ciclo ---------- */
   const PHASES = {
