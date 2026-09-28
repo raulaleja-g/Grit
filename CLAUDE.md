@@ -26,6 +26,7 @@ Grit es la app personal de entrenamiento y comida de Raúl (y de su novia, que u
   - `week` (menú fijo; claves "1" = lunes … "7" = domingo): `[{slot, time, meal: <id>}]` o `{free: true, title, text}` (día libre).
   - `prep` (claves de día): `{title, when, makes: [..], groups: [{name, items: [..]}], steps: [..], storage}`.
   - `shopping`: `{title, items: [{cat, name, qty, price}]}`.
+  - `rotation` (alternativa a `week`/`prep`/`shopping` fijos): `{start: <lunes del primer menú>, weeks: [{name: "Menú A", days, prep, shopping}, …]}`. `days` y `prep` usan las mismas claves "1"…"7" que `week`/`prep`. Los menús rotan en orden cada semana; cada menú va de **domingo a sábado**: el domingo ("7", con su meal prep) es el anterior a su lunes, y la lista de compra se muestra el sábado anterior (día libre del menú previo). Si hay `week`, gana `week`.
   - `nutrition.notes` existe en perfiles viejos pero **no se muestra** (Raúl no quiere notas de sección en la app).
 
 ## Pantallas

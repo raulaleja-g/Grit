@@ -52,67 +52,88 @@
    "fat": 75,
    "meals": [
     {
-     "id": "pre-entreno",
-     "type": "snack",
-     "name": "Banana + tostada con miel",
-     "kcal": 220,
-     "p": 5,
-     "c": 47,
-     "f": 1,
+     "id": "huevos-tostadas",
+     "type": "desayuno",
+     "name": "Huevos revueltos con tostadas y tomate",
+     "kcal": 555,
+     "p": 32,
+     "c": 53,
+     "f": 23,
      "ingredients": [
-      "1 banana",
-      "1 rebanada de pan",
-      "1 cdta de miel"
+      "3 huevos",
+      "3 rebanadas de pan",
+      "15 g de cream cheese",
+      "100 g de tomates cherry",
+      "Sal y pimienta"
      ],
      "steps": [
-      "Tuesta el pan, ponle la miel y cómelo con la banana 20–30 min antes de entrenar."
+      "Tuesta el pan (3 min en la airfryer a 180 °C o en la sartén).",
+      "Revuelve los huevos a fuego medio-bajo con sal y pimienta; al final mezcla el cream cheese para que queden cremosos.",
+      "Sirve sobre las tostadas con los tomates cherry."
      ]
     },
     {
      "id": "egg-muffins",
      "type": "desayuno",
-     "name": "Egg muffins + bagel",
-     "kcal": 525,
-     "p": 36,
-     "c": 50,
-     "f": 20,
+     "name": "Egg muffins de paprika + bagel",
+     "kcal": 510,
+     "p": 31,
+     "c": 49,
+     "f": 21,
      "ingredients": [
       "3 egg muffins (del meal prep del domingo)",
-      "1 bagel"
+      "1 bagel",
+      "15 g de cream cheese"
      ],
      "steps": [
-      "Calienta los 3 muffins y el bagel abierto 3 min en la airfryer a 180 °C (o los muffins 1 min en el microondas).",
-      "Come los muffins dentro del bagel o al lado."
+      "Calienta los muffins y el bagel abierto 3 min en la airfryer a 180 °C (o los muffins 1 min en el microondas).",
+      "Unta el bagel con el cream cheese y mete los muffins dentro o cómelos al lado."
      ],
      "from": "Meal prep del domingo"
     },
     {
-     "id": "frasco-cottage",
+     "id": "egg-muffins-champi",
      "type": "desayuno",
-     "name": "Frasco de cottage con frutos rojos",
-     "kcal": 525,
-     "p": 35,
-     "c": 66,
-     "f": 13,
+     "name": "Egg muffins de champiñones y zucchini + bagel",
+     "kcal": 510,
+     "p": 32,
+     "c": 46,
+     "f": 21,
      "ingredients": [
-      "1 frasco de cottage con frutos rojos (del meal prep del miércoles)",
-      "1 banana",
-      "1 cdta de miel",
-      "1 rebanada de pan integral"
+      "3 egg muffins (del meal prep del domingo)",
+      "1 bagel",
+      "15 g de cream cheese"
      ],
      "steps": [
-      "Saca el frasco de la nevera y añade la banana en rodajas y la miel.",
-      "Tuesta la rebanada de pan."
+      "Calienta los muffins y el bagel abierto 3 min en la airfryer a 180 °C (o los muffins 1 min en el microondas).",
+      "Unta el bagel con el cream cheese y mete los muffins dentro o cómelos al lado."
      ],
-     "from": "Meal prep del miércoles"
+     "from": "Meal prep del domingo"
+    },
+    {
+     "id": "bagel-huevo",
+     "type": "desayuno",
+     "name": "Bagel sándwich de huevo (congelado)",
+     "kcal": 500,
+     "p": 30,
+     "c": 47,
+     "f": 21,
+     "ingredients": [
+      "1 bagel sándwich de huevo (del meal prep del domingo)"
+     ],
+     "steps": [
+      "Del congelador: 1 min en el microondas para descongelar y 5 min en la airfryer a 180 °C para que el bagel quede crujiente.",
+      "Si lo pasaste a la nevera la noche anterior, basta con 5 min en la airfryer."
+     ],
+     "from": "Meal prep del domingo"
     },
     {
      "id": "bagel-atun",
      "type": "desayuno",
-     "name": "Bagel de atún gratinado",
-     "kcal": 440,
+     "name": "Bagel de atún gratinado + manzana",
+     "kcal": 525,
      "p": 41,
-     "c": 48,
+     "c": 66,
      "f": 9,
      "ingredients": [
       "1 bagel",
@@ -120,120 +141,311 @@
       "25 g de cream cheese",
       "2 cdas de cebolla picada fina",
       "80 g de tomates cherry",
+      "1 manzana",
       "Pimienta"
      ],
      "steps": [
       "Mezcla el atún con el cream cheese, la cebolla y pimienta.",
       "Abre el bagel, rellénalo y gratínalo 4 min en la airfryer a 180 °C.",
-      "Acompaña con los tomates cherry."
+      "Acompaña con los tomates cherry y la manzana."
      ]
     },
     {
-     "id": "tostada-cc",
+     "id": "pre-entreno",
      "type": "snack",
-     "name": "Tostada con cream cheese y fruta",
-     "kcal": 245,
+     "name": "Tostada con miel",
+     "kcal": 215,
      "p": 6,
-     "c": 43,
-     "f": 5,
+     "c": 41,
+     "f": 2,
      "ingredients": [
-      "1 rebanada de pan integral",
+      "2 rebanadas de pan",
+      "2 cdtas de miel"
+     ],
+     "steps": [
+      "Tuesta el pan, ponle la miel y cómelo 20–30 min antes de entrenar, con un vaso de agua."
+     ]
+    },
+    {
+     "id": "sandwich-atun",
+     "type": "snack",
+     "name": "Sándwich de atún",
+     "kcal": 290,
+     "p": 23,
+     "c": 34,
+     "f": 6,
+     "ingredients": [
+      "2 rebanadas de pan",
+      "1/2 lata de atún",
       "15 g de cream cheese",
-      "Unos tomates cherry",
-      "1 banana o manzana"
+      "Tomates cherry o paprika en tiras"
      ],
      "steps": [
-      "Unta el pan con el cream cheese y ponle los tomates cherry en mitades. La fruta, al lado."
+      "Mezcla el atún con el cream cheese y pimienta, rellena el pan y añade el tomate. Se prepara en 3 min por la mañana y aguanta en un táper."
      ]
     },
     {
-     "id": "cottage-fruta",
+     "id": "tostadas-huevo",
      "type": "snack",
-     "name": "Cottage cheese con fruta y miel",
-     "kcal": 250,
-     "p": 18,
-     "c": 28,
-     "f": 7,
+     "name": "Tostadas con cream cheese y huevo duro",
+     "kcal": 315,
+     "p": 15,
+     "c": 35,
+     "f": 12,
      "ingredients": [
-      "150 g de cottage cheese",
-      "1 manzana (o banana, o frutos rojos)",
-      "1 cdta de miel"
+      "2 rebanadas de pan",
+      "20 g de cream cheese",
+      "1 huevo duro",
+      "Tomates cherry"
      ],
      "steps": [
-      "Corta la fruta encima del cottage y añade la miel."
+      "Unta el pan con cream cheese y pon encima el huevo duro en rodajas, sal y pimienta. Tip: cuece 4–6 huevos duros de una vez; duran 5 días en la nevera."
      ]
     },
     {
-     "id": "garbanzos-crujientes",
+     "id": "garbanzos-manzana",
      "type": "snack",
-     "name": "Garbanzos crujientes",
-     "kcal": 195,
-     "p": 9,
-     "c": 21,
+     "name": "Garbanzos crujientes + manzana",
+     "kcal": 280,
+     "p": 10,
+     "c": 39,
      "f": 8,
      "ingredients": [
-      "1/2 lata de garbanzos (hechos la noche anterior)"
+      "1/2 lata de garbanzos crujientes (hechos la noche anterior)",
+      "1 manzana"
      ],
      "steps": [
-      "Si te toca hacerlos: garbanzos escurridos y bien secos con papel de cocina, 1 cdta de aceite, pimentón ahumado, ajo en polvo y sal.",
-      "Airfryer 15 min a 200 °C, agitando a mitad. Guárdalos en un táper sin tapar del todo para que sigan crujientes."
+      "Si te toca hacerlos: garbanzos escurridos y bien secos, 1 cdta de aceite, pimentón ahumado, ajo en polvo y sal. Airfryer 15 min a 200 °C, agitando a mitad.",
+      "Guárdalos en un táper sin cerrar del todo para que sigan crujientes."
      ],
      "from": "Hechos la noche anterior"
     },
     {
-     "id": "curry",
-     "type": "almuerzo",
-     "name": "Curry de garbanzos y pollo con arroz",
-     "kcal": 820,
-     "p": 56,
-     "c": 104,
-     "f": 17,
+     "id": "cottage-frutos",
+     "type": "snack",
+     "name": "Cottage cheese con frutos rojos y miel",
+     "kcal": 215,
+     "p": 18,
+     "c": 19,
+     "f": 7,
      "ingredients": [
-      "1 tupper de curry con arroz"
+      "150 g de cottage cheese",
+      "120 g de frutos rojos congelados (descongelados)",
+      "1 cdta de miel"
      ],
      "steps": [
-      "Recalienta 2–3 min en el microondas (o en una sartén con un chorrito de agua), removiendo a mitad."
+      "Pon los frutos rojos encima del cottage y añade la miel."
+     ]
+    },
+    {
+     "id": "bagel-cc-manzana",
+     "type": "snack",
+     "name": "Bagel con cream cheese + manzana",
+     "kcal": 370,
+     "p": 10,
+     "c": 62,
+     "f": 7,
+     "ingredients": [
+      "1 bagel",
+      "25 g de cream cheese",
+      "1 manzana"
      ],
-     "from": "Meal prep del domingo"
+     "steps": [
+      "Tuesta el bagel y úntale el cream cheese. La manzana, al lado."
+     ]
     },
     {
      "id": "chili",
      "type": "almuerzo",
      "name": "Chili de carne con frijoles rojos y arroz",
-     "kcal": 805,
-     "p": 45,
-     "c": 100,
-     "f": 21,
+     "kcal": 955,
+     "p": 51,
+     "c": 123,
+     "f": 25,
      "ingredients": [
       "1 tupper de chili con arroz"
      ],
      "steps": [
       "Recalienta 2–3 min en el microondas (o en una sartén con un chorrito de agua)."
      ],
-     "from": "Meal prep del miércoles"
+     "from": "Meal prep"
     },
     {
-     "id": "muslos-airfryer",
-     "type": "cena",
-     "name": "Muslos crujientes con papas y verduras",
-     "kcal": 650,
-     "p": 43,
-     "c": 59,
-     "f": 26,
+     "id": "teriyaki",
+     "type": "almuerzo",
+     "name": "Muslos de pollo teriyaki con arroz y brócoli",
+     "kcal": 850,
+     "p": 56,
+     "c": 108,
+     "f": 20,
      "ingredients": [
-      "180 g de muslos de pollo sin hueso",
-      "300 g de papas",
-      "1/2 paprika",
-      "1/2 zucchini",
-      "1/2 cebolla",
-      "1 cda de aceite",
-      "Pimentón, ajo en polvo, romero, sal"
+      "1 tupper de pollo teriyaki con arroz y brócoli"
      ],
      "steps": [
-      "Corta las papas en gajos, mézclalas con 1 cdta de aceite, sal y pimentón. Airfryer 10 min a 200 °C.",
-      "Unta los muslos con pimentón, ajo en polvo, romero y sal. Añádelos a la airfryer con las papas y sigue 18 min a 190 °C, volteando a mitad.",
-      "Mientras: saltea paprika, zucchini y cebolla en tiras con el resto del aceite, 6–8 min a fuego alto."
-     ]
+      "Recalienta 2–3 min en el microondas, removiendo a mitad."
+     ],
+     "from": "Meal prep"
+    },
+    {
+     "id": "albondigas",
+     "type": "almuerzo",
+     "name": "Albóndigas en salsa de tomate con arroz",
+     "kcal": 890,
+     "p": 43,
+     "c": 108,
+     "f": 30,
+     "ingredients": [
+      "1 tupper de albóndigas con arroz"
+     ],
+     "steps": [
+      "Recalienta 2–3 min en el microondas, con la tapa entreabierta."
+     ],
+     "from": "Meal prep"
+    },
+    {
+     "id": "muslos-prep",
+     "type": "almuerzo",
+     "name": "Muslos a la paprika con papas y brócoli",
+     "kcal": 775,
+     "p": 52,
+     "c": 86,
+     "f": 23,
+     "ingredients": [
+      "1 tupper de muslos con papas y brócoli"
+     ],
+     "steps": [
+      "Recalienta 2–3 min en el microondas o 5 min en la airfryer a 180 °C (así las papas vuelven a quedar crujientes)."
+     ],
+     "from": "Meal prep"
+    },
+    {
+     "id": "guiso-garbanzos",
+     "type": "almuerzo",
+     "name": "Guiso de garbanzos con pollo, papa y paprika",
+     "kcal": 820,
+     "p": 59,
+     "c": 108,
+     "f": 13,
+     "ingredients": [
+      "1 tupper de guiso",
+      "2 rebanadas de pan para mojar"
+     ],
+     "steps": [
+      "Recalienta 3 min en el microondas, removiendo a mitad."
+     ],
+     "from": "Meal prep"
+    },
+    {
+     "id": "bolonesa",
+     "type": "almuerzo",
+     "name": "Pasta boloñesa con zucchini y champiñones",
+     "kcal": 890,
+     "p": 51,
+     "c": 110,
+     "f": 24,
+     "ingredients": [
+      "1 tupper de pasta boloñesa"
+     ],
+     "steps": [
+      "Recalienta 2–3 min en el microondas con un chorrito de agua."
+     ],
+     "from": "Meal prep"
+    },
+    {
+     "id": "teriyaki-cena",
+     "type": "cena",
+     "name": "Muslos de pollo teriyaki con arroz y brócoli (recién hecho)",
+     "kcal": 850,
+     "p": 56,
+     "c": 108,
+     "f": 20,
+     "ingredients": [
+      "1 ración de lo que cocinas hoy"
+     ],
+     "steps": [
+      "La cena de hoy es la primera ración del meal prep de hoy (receta completa abajo)."
+     ],
+     "from": "Meal prep de hoy"
+    },
+    {
+     "id": "muslos-prep-cena",
+     "type": "cena",
+     "name": "Muslos a la paprika con papas y brócoli (recién hecho)",
+     "kcal": 775,
+     "p": 52,
+     "c": 86,
+     "f": 23,
+     "ingredients": [
+      "1 ración de lo que cocinas hoy"
+     ],
+     "steps": [
+      "La cena de hoy es la primera ración del meal prep de hoy (receta completa abajo)."
+     ],
+     "from": "Meal prep de hoy"
+    },
+    {
+     "id": "bolonesa-cena",
+     "type": "cena",
+     "name": "Pasta boloñesa con zucchini y champiñones (recién hecho)",
+     "kcal": 890,
+     "p": 51,
+     "c": 110,
+     "f": 24,
+     "ingredients": [
+      "1 ración de lo que cocinas hoy"
+     ],
+     "steps": [
+      "La cena de hoy es la primera ración del meal prep de hoy (receta completa abajo)."
+     ],
+     "from": "Meal prep de hoy"
+    },
+    {
+     "id": "chili-hoy",
+     "type": "almuerzo",
+     "name": "Chili de carne con frijoles rojos y arroz (recién hecho)",
+     "kcal": 955,
+     "p": 51,
+     "c": 123,
+     "f": 25,
+     "ingredients": [
+      "1 ración de lo que cocinas hoy"
+     ],
+     "steps": [
+      "El almuerzo de hoy es la primera ración del meal prep de hoy (receta completa abajo)."
+     ],
+     "from": "Meal prep de hoy"
+    },
+    {
+     "id": "albondigas-hoy",
+     "type": "almuerzo",
+     "name": "Albóndigas en salsa de tomate con arroz (recién hecho)",
+     "kcal": 890,
+     "p": 43,
+     "c": 108,
+     "f": 30,
+     "ingredients": [
+      "1 ración de lo que cocinas hoy"
+     ],
+     "steps": [
+      "El almuerzo de hoy es la primera ración del meal prep de hoy (receta completa abajo)."
+     ],
+     "from": "Meal prep de hoy"
+    },
+    {
+     "id": "guiso-hoy",
+     "type": "almuerzo",
+     "name": "Guiso de garbanzos con pollo, papa y paprika (recién hecho)",
+     "kcal": 820,
+     "p": 59,
+     "c": 108,
+     "f": 13,
+     "ingredients": [
+      "1 ración de lo que cocinas hoy"
+     ],
+     "steps": [
+      "El almuerzo de hoy es la primera ración del meal prep de hoy (receta completa abajo)."
+     ],
+     "from": "Meal prep de hoy"
     },
     {
      "id": "shakshuka",
@@ -245,7 +457,7 @@
      "f": 27,
      "ingredients": [
       "3 huevos",
-      "1/2 lata de garbanzos (la otra mitad va a los garbanzos crujientes de mañana)",
+      "1/2 lata de garbanzos (la otra mitad: garbanzos crujientes para mañana)",
       "250 g de tomate triturado",
       "1/2 paprika",
       "1/2 cebolla",
@@ -257,66 +469,26 @@
       "Sofríe cebolla y paprika picadas con el aceite, 5 min.",
       "Añade tomate, garbanzos, 1/2 cdta de comino y pimentón; 10 min a fuego medio.",
       "Haz 3 huecos, casca los huevos, tapa y deja 6–8 min hasta que la clara cuaje.",
-      "Mientras: pon la otra 1/2 lata de garbanzos en la airfryer (receta de garbanzos crujientes) para la merienda de mañana.",
+      "Mientras: la otra 1/2 lata de garbanzos a la airfryer (15 min a 200 °C con aceite y pimentón) para la merienda de mañana.",
       "Sirve con el pan tostado."
      ]
-    },
-    {
-     "id": "arroz-frito",
-     "type": "cena",
-     "name": "Arroz frito con huevo, pollo y verduras",
-     "kcal": 665,
-     "p": 48,
-     "c": 74,
-     "f": 18,
-     "ingredients": [
-      "~240 g de arroz cocido (el que guardaste el domingo)",
-      "2 huevos",
-      "100 g de pechuga en dados",
-      "150 g de verduras congeladas",
-      "1/4 de cebolla",
-      "1 cda de salsa de soja",
-      "1 cdta de aceite",
-      "Ajo y jengibre"
-     ],
-     "steps": [
-      "Saltea el pollo con el aceite a fuego alto, 4–5 min.",
-      "Añade cebolla, ajo, jengibre y las verduras congeladas, 3 min.",
-      "Echa el arroz frío y la soja, y saltea 3 min sin parar.",
-      "Empuja todo a un lado, revuelve los huevos en el hueco y mezcla."
-     ]
-    },
-    {
-     "id": "chili-cena",
-     "type": "cena",
-     "name": "Chili de carne con arroz (recién hecho)",
-     "kcal": 805,
-     "p": 45,
-     "c": 100,
-     "f": 21,
-     "ingredients": [
-      "1 ración del chili que haces hoy"
-     ],
-     "steps": [
-      "Cena de hoy = la primera ración del meal prep del miércoles (ver abajo)."
-     ],
-     "from": "Meal prep de hoy"
     },
     {
      "id": "papa-atun",
      "type": "cena",
      "name": "Papa rellena de atún con brócoli",
-     "kcal": 595,
-     "p": 44,
-     "c": 71,
-     "f": 14,
+     "kcal": 725,
+     "p": 48,
+     "c": 95,
+     "f": 15,
      "ingredients": [
-      "2 papas grandes (~400 g)",
+      "2 papas grandes (~450 g)",
       "1 lata de atún",
       "30 g de cream cheese",
       "150 g de brócoli",
       "1 cdta de aceite",
-      "Cebolla picada, sal y pimienta"
+      "Cebolla picada, sal y pimienta",
+      "1 rebanada de pan"
      ],
      "steps": [
       "Parte las papas por la mitad, úntalas con el aceite y sal. Airfryer 30–35 min a 200 °C (o hiérvelas 15 min y termina 10 min en la airfryer).",
@@ -351,54 +523,41 @@
      ]
     },
     {
-     "id": "muslos-prep",
-     "type": "almuerzo",
-     "name": "Muslos a la paprika con papas y brócoli",
-     "kcal": 655,
-     "p": 47,
-     "c": 70,
-     "f": 19,
+     "id": "arroz-frito",
+     "type": "cena",
+     "name": "Arroz frito con huevo, pollo y verduras",
+     "kcal": 735,
+     "p": 50,
+     "c": 90,
+     "f": 18,
      "ingredients": [
-      "Para 3 tuppers: 540 g de muslos sin hueso, 1,2 kg de papas, 450 g de brócoli, 1,5 cdas de aceite, pimentón, ajo, sal"
+      "~300 g de arroz cocido (el que guardaste del meal prep)",
+      "2 huevos",
+      "100 g de pechuga en dados",
+      "150 g de verduras congeladas",
+      "1/4 de cebolla",
+      "1 cda de salsa de soja",
+      "1 cdta de aceite",
+      "Ajo y jengibre"
      ],
      "steps": [
-      "Marina los muslos con pimentón, ajo, sal y 1 cdta de aceite.",
-      "Fuego 1: hierve las papas en cubos 10 min; termínalas 15 min en la airfryer a 200 °C.",
-      "Airfryer: muslos 18–20 min a 190 °C, volteando a mitad.",
-      "Fuego 2: brócoli al vapor 5 min.",
-      "Reparte en 3 tuppers."
-     ],
-     "from": "Alternativa para meal prep"
-    },
-    {
-     "id": "bolonesa",
-     "type": "almuerzo",
-     "name": "Pasta boloñesa con zucchini y champiñones",
-     "kcal": 775,
-     "p": 45,
-     "c": 96,
-     "f": 21,
-     "ingredients": [
-      "Para 3 tuppers: 330 g de pasta, 360 g de carne molida, 600 g de tomate triturado, 1 zucchini, 300 g de champiñones, 1 cebolla, orégano y ajo"
-     ],
-     "steps": [
-      "Fuego 1: pasta, retírala 1 min antes de lo que dice el paquete.",
-      "Fuego 2: dora carne y cebolla, añade zucchini y champiñones picados finos y el tomate; 15 min.",
-      "Mezcla y reparte en 3 tuppers."
-     ],
-     "from": "Alternativa para meal prep"
+      "Saltea el pollo con el aceite a fuego alto, 4–5 min.",
+      "Añade cebolla, ajo, jengibre y las verduras congeladas, 3 min.",
+      "Echa el arroz frío y la soja, y saltea 3 min sin parar.",
+      "Empuja todo a un lado, revuelve los huevos en el hueco y mezcla."
+     ]
     },
     {
      "id": "batata-pollo",
      "type": "cena",
      "name": "Batata con pechuga a la paprika y champiñones",
-     "kcal": 630,
-     "p": 52,
-     "c": 65,
+     "kcal": 670,
+     "p": 53,
+     "c": 75,
      "f": 17,
      "ingredients": [
       "170 g de pechuga",
-      "300 g de batata",
+      "350 g de batata",
       "150 g de champiñones",
       "100 g de brócoli",
       "1 cda de aceite",
@@ -409,455 +568,1304 @@
       "Pechuga y champiñones a la plancha con el resto del aceite y las especias.",
       "Brócoli al vapor 5 min."
      ]
+    },
+    {
+     "id": "pasta-atun",
+     "type": "cena",
+     "name": "Pasta con atún, tomates cherry y zucchini",
+     "kcal": 690,
+     "p": 50,
+     "c": 99,
+     "f": 9,
+     "ingredients": [
+      "120 g de pasta",
+      "1 lata de atún",
+      "150 g de tomate triturado",
+      "100 g de tomates cherry",
+      "1/2 zucchini",
+      "1 cdta de aceite",
+      "Ajo, orégano, sal"
+     ],
+     "steps": [
+      "Fuego 1: pasta según el paquete.",
+      "Fuego 2: saltea el zucchini en cubos y los cherry partidos con el aceite y ajo, 5 min; añade el tomate y el orégano, 5 min.",
+      "Apaga, mezcla el atún y la pasta escurrida."
+     ]
+    },
+    {
+     "id": "tortilla-papa",
+     "type": "cena",
+     "name": "Tortilla de papa con tomates",
+     "kcal": 780,
+     "p": 38,
+     "c": 73,
+     "f": 36,
+     "ingredients": [
+      "4 huevos",
+      "300 g de papas",
+      "1/2 cebolla",
+      "1 cda de aceite",
+      "100 g de tomates cherry",
+      "1 rebanada de pan",
+      "Sal"
+     ],
+     "steps": [
+      "Papas en láminas finas y cebolla: airfryer 15 min a 180 °C con 1 cdta de aceite, removiendo a mitad (así no se fríen en aceite).",
+      "Bate los huevos con sal y mezcla las papas y la cebolla; deja reposar 5 min.",
+      "Sartén antiadherente con el resto del aceite a fuego medio-bajo: vierte y cuaja 5–6 min con tapa. Dale la vuelta con un plato y 2–3 min más.",
+      "Sirve con los tomates y el pan."
+     ]
+    },
+    {
+     "id": "fajita-bowl",
+     "type": "cena",
+     "name": "Bowl de pollo fajita con arroz",
+     "kcal": 670,
+     "p": 49,
+     "c": 86,
+     "f": 13,
+     "ingredients": [
+      "170 g de pechuga en tiras",
+      "90 g de arroz",
+      "1 paprika en tiras",
+      "1/2 cebolla en tiras",
+      "2 cdtas de aceite",
+      "Pimentón, comino, ajo en polvo, un poco de chile, sal",
+      "Tomates cherry"
+     ],
+     "steps": [
+      "Fuego 1: arroz según el paquete.",
+      "Mezcla el pollo con las especias y 1 cdta de aceite.",
+      "Fuego 2 a tope: paprika y cebolla con el resto del aceite, 4 min; añade el pollo y saltea 6–7 min hasta que se dore.",
+      "Sirve sobre el arroz con los cherry partidos."
+     ]
+    },
+    {
+     "id": "empanizada",
+     "type": "cena",
+     "name": "Pechuga empanizada en airfryer con papas",
+     "kcal": 605,
+     "p": 52,
+     "c": 61,
+     "f": 16,
+     "ingredients": [
+      "170 g de pechuga (abierta en filete fino)",
+      "1 rebanada de pan seco rallado (o triturado)",
+      "1/2 huevo batido",
+      "300 g de papas",
+      "2 cdtas de aceite",
+      "Pimentón, ajo en polvo, sal",
+      "Tomates cherry"
+     ],
+     "steps": [
+      "Papas en gajos con 1 cdta de aceite y sal: airfryer 10 min a 200 °C.",
+      "Pasa la pechuga por el huevo y luego por el pan rallado con pimentón, ajo y sal. Rocía con el resto del aceite.",
+      "Añádela a la airfryer con las papas y sigue 12 min a 190 °C, volteando a mitad.",
+      "Sirve con los tomates cherry."
+     ]
+    },
+    {
+     "id": "muslos-airfryer",
+     "type": "cena",
+     "name": "Muslos crujientes con papas y verduras",
+     "kcal": 650,
+     "p": 43,
+     "c": 59,
+     "f": 26,
+     "ingredients": [
+      "180 g de muslos de pollo sin hueso",
+      "300 g de papas",
+      "1/2 paprika",
+      "1/2 zucchini",
+      "1/2 cebolla",
+      "1 cda de aceite",
+      "Pimentón, ajo en polvo, romero, sal"
+     ],
+     "steps": [
+      "Papas en gajos con 1 cdta de aceite, sal y pimentón: airfryer 10 min a 200 °C.",
+      "Muslos con pimentón, ajo, romero y sal: añádelos a la airfryer y sigue 18 min a 190 °C, volteando a mitad.",
+      "Mientras: saltea paprika, zucchini y cebolla con el resto del aceite, 6–8 min."
+     ]
     }
    ],
-   "week": {
-    "1": [
+   "rotation": {
+    "start": "2026-09-28",
+    "weeks": [
      {
-      "slot": "Pre-entreno",
-      "time": "6:30",
-      "meal": "pre-entreno"
-     },
-     {
-      "slot": "Desayuno",
-      "time": "8:30",
-      "meal": "egg-muffins"
-     },
-     {
-      "slot": "Media mañana",
-      "time": "11:00",
-      "meal": "tostada-cc"
-     },
-     {
-      "slot": "Almuerzo",
-      "time": "13:30",
-      "meal": "curry"
-     },
-     {
-      "slot": "Merienda",
-      "time": "16:30",
-      "meal": "cottage-fruta"
-     },
-     {
-      "slot": "Cena",
-      "time": "19:30",
-      "meal": "shakshuka"
-     }
-    ],
-    "2": [
-     {
-      "slot": "Pre-entreno",
-      "time": "6:30",
-      "meal": "pre-entreno"
-     },
-     {
-      "slot": "Desayuno",
-      "time": "8:30",
-      "meal": "egg-muffins"
-     },
-     {
-      "slot": "Media mañana",
-      "time": "11:00",
-      "meal": "tostada-cc"
-     },
-     {
-      "slot": "Almuerzo",
-      "time": "13:30",
-      "meal": "curry"
-     },
-     {
-      "slot": "Merienda",
-      "time": "16:30",
-      "meal": "garbanzos-crujientes"
-     },
-     {
-      "slot": "Cena",
-      "time": "19:30",
-      "meal": "arroz-frito"
-     }
-    ],
-    "3": [
-     {
-      "slot": "Pre-entreno",
-      "time": "6:30",
-      "meal": "pre-entreno"
-     },
-     {
-      "slot": "Desayuno",
-      "time": "8:30",
-      "meal": "egg-muffins"
-     },
-     {
-      "slot": "Media mañana",
-      "time": "11:00",
-      "meal": "tostada-cc"
-     },
-     {
-      "slot": "Almuerzo",
-      "time": "13:30",
-      "meal": "curry"
-     },
-     {
-      "slot": "Merienda",
-      "time": "16:30",
-      "meal": "cottage-fruta"
-     },
-     {
-      "slot": "Cena",
-      "time": "19:30",
-      "meal": "chili-cena"
-     }
-    ],
-    "4": [
-     {
-      "slot": "Pre-entreno",
-      "time": "6:30",
-      "meal": "pre-entreno"
-     },
-     {
-      "slot": "Desayuno",
-      "time": "8:30",
-      "meal": "egg-muffins"
-     },
-     {
-      "slot": "Media mañana",
-      "time": "11:00",
-      "meal": "tostada-cc"
-     },
-     {
-      "slot": "Almuerzo",
-      "time": "13:30",
-      "meal": "chili"
-     },
-     {
-      "slot": "Merienda",
-      "time": "16:30",
-      "meal": "garbanzos-crujientes"
-     },
-     {
-      "slot": "Cena",
-      "time": "19:30",
-      "meal": "papa-atun"
-     }
-    ],
-    "5": [
-     {
-      "slot": "Pre-entreno",
-      "time": "6:30",
-      "meal": "pre-entreno"
-     },
-     {
-      "slot": "Desayuno",
-      "time": "8:30",
-      "meal": "frasco-cottage"
-     },
-     {
-      "slot": "Media mañana",
-      "time": "11:00",
-      "meal": "tostada-cc"
-     },
-     {
-      "slot": "Almuerzo",
-      "time": "13:30",
-      "meal": "chili"
-     },
-     {
-      "slot": "Merienda",
-      "time": "16:30",
-      "meal": "garbanzos-crujientes"
-     },
-     {
-      "slot": "Cena",
-      "time": "19:30",
-      "meal": "smash-burger"
-     }
-    ],
-    "6": {
-     "free": true,
-     "title": "Día libre del menú",
-     "text": "Hoy comes y cocinas lo que quieras. Es día de súper: abajo tienes la lista para la semana que viene."
-    },
-    "7": [
-     {
-      "slot": "Desayuno",
-      "time": "9:30",
-      "meal": "bagel-atun"
-     },
-     {
-      "slot": "Media mañana",
-      "time": "11:00",
-      "meal": "tostada-cc"
-     },
-     {
-      "slot": "Almuerzo",
-      "time": "13:30",
-      "meal": "curry"
-     },
-     {
-      "slot": "Merienda",
-      "time": "17:00",
-      "meal": "cottage-fruta"
-     },
-     {
-      "slot": "Cena",
-      "time": "19:30",
-      "meal": "muslos-airfryer"
-     }
-    ]
-   },
-   "prep": {
-    "7": {
-     "title": "Meal prep del domingo",
-     "when": "~11:00 · 1 h",
-     "makes": [
-      "Curry x4: almuerzo de hoy + lunes, martes y miércoles",
-      "12 egg muffins: desayunos de lunes a jueves",
-      "Arroz extra para el arroz frito del martes"
-     ],
-     "groups": [
-      {
-       "name": "Curry de garbanzos y pollo (x4)",
-       "items": [
-        "600 g de pechuga de pollo en dados",
-        "2 latas de garbanzos, escurridos",
-        "500 g de tomate triturado",
-        "2 cebollas picadas",
-        "320 g de verduras congeladas",
-        "100 g de cream cheese",
-        "1,5 cdas de aceite",
-        "2 cdas de curry en polvo, 1 cdta de comino, 2 dientes de ajo, sal"
-       ]
+      "name": "Menú A",
+      "days": {
+       "7": [
+        {
+         "slot": "Desayuno",
+         "time": "9:30",
+         "meal": "huevos-tostadas"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "chili-hoy"
+        },
+        {
+         "slot": "Merienda",
+         "time": "17:00",
+         "meal": "cottage-frutos"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "batata-pollo"
+        }
+       ],
+       "1": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "chili"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "sandwich-atun"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "shakshuka"
+        }
+       ],
+       "2": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "chili"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "garbanzos-manzana"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "papa-atun"
+        }
+       ],
+       "3": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "chili"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "tostadas-huevo"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "teriyaki-cena"
+        }
+       ],
+       "4": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "teriyaki"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "bagel-cc-manzana"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "arroz-frito"
+        }
+       ],
+       "5": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "bagel-atun"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "teriyaki"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "tostadas-huevo"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "smash-burger"
+        }
+       ],
+       "6": {
+        "free": true,
+        "title": "Día libre del menú",
+        "text": "Hoy comes y cocinas lo que quieras. Es día de súper: abajo tienes la lista para el menú que empieza mañana."
+       }
       },
-      {
-       "name": "Arroz",
-       "items": [
-        "420 g de arroz (340 g para el curry + 80 g para el martes)"
-       ]
+      "prep": {
+       "7": {
+        "title": "Meal prep del domingo",
+        "when": "~11:00 · 1 h",
+        "makes": [
+         "Chili x4: almuerzo de hoy + lunes, martes y miércoles",
+         "12 egg muffins: desayunos de lunes a jueves"
+        ],
+        "groups": [
+         {
+          "name": "Chili (x4)",
+          "items": [
+           "600 g de carne molida",
+           "4 latas de frijoles rojos, escurridos",
+           "480 g de tomate triturado",
+           "2 paprikas en cubos",
+           "2 cebollas picadas",
+           "1 cda de comino, 2 cdtas de pimentón ahumado, 1 cdta de chile en polvo, 3 dientes de ajo, sal"
+          ]
+         },
+         {
+          "name": "Arroz",
+          "items": [
+           "440 g de arroz"
+          ]
+         },
+         {
+          "name": "Egg muffins de paprika (x12)",
+          "items": [
+           "12 huevos",
+           "1 paprika en cubitos",
+           "1/2 cebolla picada",
+           "Sal, pimienta y orégano",
+           "12 moldes de silicona"
+          ]
+         }
+        ],
+        "steps": [
+         "Pica todo primero: 2,5 cebollas (2 para el chili, 1/2 para los muffins) y 3 paprikas (2 para el chili, 1 para los muffins).",
+         "Muffins: bate los huevos con la paprika, la cebolla, sal, pimienta y orégano. Reparte en los moldes (3/4 de altura) y airfryer 12–15 min a 160 °C (2 tandas si no caben). Listos cuando el centro no tiembla.",
+         "Fuego 1: arroz (440 g) según el paquete.",
+         "Fuego 2 (olla grande): dora la carne con la cebolla 8 min, sin aceite; escurre la grasa si sobra.",
+         "Añade paprika, ajo y especias, 2 min. Luego tomate, frijoles y 100 ml de agua; 20 min a fuego bajo, removiendo de vez en cuando.",
+         "Reparte en 4 raciones (3 tuppers + tu almuerzo de hoy) con ~330 g de arroz cocido cada una.",
+         "Enfría 20–30 min destapado y a la nevera. Muffins en un táper con papel de cocina."
+        ],
+        "storage": "Nevera: chili hasta el miércoles (también se congela), muffins hasta el jueves."
+       },
+       "3": {
+        "title": "Meal prep del miércoles",
+        "when": "Por la noche, junto con la cena · 40 min",
+        "makes": [
+         "Pollo teriyaki x3: cena de hoy + almuerzos del jueves y viernes",
+         "Arroz extra para el arroz frito del jueves"
+        ],
+        "groups": [
+         {
+          "name": "Pollo teriyaki (x3)",
+          "items": [
+           "660 g de muslos de pollo sin hueso en trozos",
+           "450 g de brócoli",
+           "1 cda de aceite",
+           "Salsa: 3 cdas de salsa de soja + 2 cdas de miel + 2 dientes de ajo + 1 cdta de jengibre + 3 cdas de agua"
+          ]
+         },
+         {
+          "name": "Arroz",
+          "items": [
+           "460 g de arroz (360 g para el teriyaki + 100 g para el jueves)"
+          ]
+         }
+        ],
+        "steps": [
+         "Fuego 1: arroz (460 g) según el paquete. Guarda ~300 g cocido aparte para el arroz frito de mañana.",
+         "Mezcla los ingredientes de la salsa en un vaso.",
+         "Fuego 2: muslos con el aceite a fuego alto, 8–10 min hasta que se doren.",
+         "Añade la salsa y deja que espese y se pegue al pollo, 2–3 min.",
+         "Brócoli al vapor 5 min (en la olla del arroz al final, o en la airfryer 8 min a 180 °C con un chorrito de agua).",
+         "Sirve tu cena y reparte el resto en 2 tuppers (jueves y viernes)."
+        ],
+        "storage": "Nevera: hasta el viernes."
+       }
       },
-      {
-       "name": "Egg muffins (x12)",
+      "shopping": {
+       "title": "Lista de compra",
        "items": [
-        "12 huevos",
-        "200 g de cottage cheese",
-        "1 paprika en cubitos",
-        "1/2 cebolla picada",
-        "Sal, pimienta y orégano",
-        "12 moldes de silicona"
+        {
+         "cat": "Proteína",
+         "name": "Pechuga de pollo",
+         "qty": "300 g",
+         "price": 2.16
+        },
+        {
+         "cat": "Proteína",
+         "name": "Muslos de pollo sin hueso",
+         "qty": "700 g",
+         "price": 5.28
+        },
+        {
+         "cat": "Proteína",
+         "name": "Carne molida",
+         "qty": "750 g",
+         "price": 6.75
+        },
+        {
+         "cat": "Proteína",
+         "name": "Huevos",
+         "qty": "22",
+         "price": 6.16
+        },
+        {
+         "cat": "Proteína",
+         "name": "Cottage cheese",
+         "qty": "1 × 200 g",
+         "price": 1.1
+        },
+        {
+         "cat": "Proteína",
+         "name": "Cream cheese",
+         "qty": "2 × 200 g",
+         "price": 2.4
+        },
+        {
+         "cat": "Proteína",
+         "name": "Atún al natural",
+         "qty": "3 latas",
+         "price": 4.5
+        },
+        {
+         "cat": "Proteína",
+         "name": "Garbanzos",
+         "qty": "2 latas",
+         "price": 1.6
+        },
+        {
+         "cat": "Proteína",
+         "name": "Frijoles rojos (kidney)",
+         "qty": "3 latas",
+         "price": 2.4
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Arroz",
+         "qty": "900 g (si no te queda)",
+         "price": 1.62
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Papas",
+         "qty": "1,0 kg",
+         "price": 0.88
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Batata",
+         "qty": "350 g",
+         "price": 0.88
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Pan integral",
+         "qty": "2 × 750 g",
+         "price": 3.6
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Bagels",
+         "qty": "2 paquete(s) de 4 (7 esta semana)",
+         "price": 3.6
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Paprika",
+         "qty": "4",
+         "price": 2.8
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Cebolla",
+         "qty": "0,5 kg",
+         "price": 0.55
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Tomates cherry",
+         "qty": "500 g",
+         "price": 1.9
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Brócoli",
+         "qty": "2",
+         "price": 2.8
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Champiñones",
+         "qty": "250 g",
+         "price": 1.2
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Verduras congeladas",
+         "qty": "1 bolsa de 750 g",
+         "price": 1.8
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Tomate triturado",
+         "qty": "2 × 500 g",
+         "price": 1.4
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Frutos rojos congelados",
+         "qty": "1 bolsa (dura varias semanas)",
+         "price": 2.5
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Manzanas",
+         "qty": "3",
+         "price": 1.05
+        },
+        {
+         "cat": "Despensa",
+         "name": "Aceite, miel, soja y especias",
+         "qty": "reponer cuando falte",
+         "price": 2.5
+        }
        ]
       }
-     ],
-     "steps": [
-      "Pica todo primero: 2,5 cebollas (2 para el curry, 1/2 para los muffins), la paprika y el pollo en dados.",
-      "Muffins: bate los 12 huevos con el cottage, la paprika, la 1/2 cebolla, sal, pimienta y orégano. Reparte en los moldes (3/4 de altura).",
-      "Airfryer: muffins 12–15 min a 160 °C (en 2 tandas si no caben). Están listos cuando el centro no tiembla.",
-      "Fuego 1: arroz (420 g) según el paquete. Escúrrelo y extiéndelo en una bandeja para que se enfríe rápido.",
-      "Fuego 2 (olla grande): aceite y cebolla 4 min; añade pollo, curry, comino y ajo, 5 min.",
-      "Añade tomate, garbanzos, verduras congeladas y 100 ml de agua. 15 min a fuego medio-bajo.",
-      "Apaga el fuego, mezcla el cream cheese y prueba de sal.",
-      "Reparte el curry en 4 raciones (3 tuppers + tu almuerzo de hoy) con ~250 g de arroz cocido cada una. Guarda ~240 g de arroz cocido aparte para el arroz frito del martes.",
-      "Deja enfriar 20–30 min destapado y a la nevera. Muffins en un táper con papel de cocina."
-     ],
-     "storage": "Nevera: curry hasta el miércoles, muffins hasta el jueves."
-    },
-    "3": {
-     "title": "Meal prep del miércoles",
-     "when": "Por la noche, junto con la cena · 45 min",
-     "makes": [
-      "Chili x3: cena de hoy + almuerzos del jueves y viernes",
-      "Garbanzos crujientes: meriendas del jueves y viernes",
-      "1 frasco de cottage: desayuno del viernes"
-     ],
-     "groups": [
-      {
-       "name": "Chili (x3)",
-       "items": [
-        "400 g de carne molida",
-        "2 latas de frijoles rojos, escurridos",
-        "360 g de tomate triturado",
-        "2 paprikas en cubos",
-        "1 cebolla picada",
-        "2 cdtas de comino, 1 cdta de pimentón ahumado, 1/2 cdta de chile en polvo, 2 dientes de ajo, sal"
-       ]
+     },
+     {
+      "name": "Menú B",
+      "days": {
+       "7": [
+        {
+         "slot": "Desayuno",
+         "time": "9:30",
+         "meal": "huevos-tostadas"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "albondigas-hoy"
+        },
+        {
+         "slot": "Merienda",
+         "time": "17:00",
+         "meal": "cottage-frutos"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "pasta-atun"
+        }
+       ],
+       "1": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "bagel-huevo"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "albondigas"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "sandwich-atun"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "tortilla-papa"
+        }
+       ],
+       "2": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "bagel-huevo"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "albondigas"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "tostadas-huevo"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "fajita-bowl"
+        }
+       ],
+       "3": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "bagel-huevo"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "albondigas"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "bagel-cc-manzana"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "muslos-prep-cena"
+        }
+       ],
+       "4": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "bagel-huevo"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "muslos-prep"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "tostadas-huevo"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "shakshuka"
+        }
+       ],
+       "5": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "huevos-tostadas"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "muslos-prep"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "garbanzos-manzana"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "smash-burger"
+        }
+       ],
+       "6": {
+        "free": true,
+        "title": "Día libre del menú",
+        "text": "Hoy comes y cocinas lo que quieras. Es día de súper: abajo tienes la lista para el menú que empieza mañana."
+       }
       },
-      {
-       "name": "Arroz",
-       "items": [
-        "240 g de arroz"
-       ]
+      "prep": {
+       "7": {
+        "title": "Meal prep del domingo",
+        "when": "~11:00 · 1 h 15",
+        "makes": [
+         "Albóndigas x4: almuerzo de hoy + lunes, martes y miércoles",
+         "4 bagel sándwiches de huevo congelados: desayunos de lunes a jueves"
+        ],
+        "groups": [
+         {
+          "name": "Albóndigas en salsa de tomate (x4)",
+          "items": [
+           "600 g de carne molida",
+           "1 huevo",
+           "1 rebanada de pan seco rallado (o remojado en un poco de agua)",
+           "800 g de tomate triturado",
+           "2 cebollas picadas",
+           "1 cda de aceite",
+           "Ajo, orégano, comino, sal y pimienta"
+          ]
+         },
+         {
+          "name": "Arroz",
+          "items": [
+           "440 g de arroz"
+          ]
+         },
+         {
+          "name": "Bagel sándwiches de huevo (x4)",
+          "items": [
+           "12 huevos",
+           "1 paprika en cubitos",
+           "4 bagels",
+           "60 g de cream cheese",
+           "Sal y pimienta",
+           "Film o bolsas de congelar"
+          ]
+         }
+        ],
+        "steps": [
+         "Albóndigas: mezcla carne, huevo, pan rallado, 1/2 cebolla muy picada, ajo, comino, sal y pimienta. Forma ~20 bolitas.",
+         "Airfryer: albóndigas 10 min a 190 °C (en 2 tandas si hace falta).",
+         "Fuego 2: sofríe el resto de la cebolla con el aceite 5 min, añade tomate y orégano, 10 min. Mete las albóndigas y 10 min más a fuego bajo.",
+         "Fuego 1: arroz (440 g) según el paquete.",
+         "Huevos para los bagels: bate los 12 huevos con la paprika, sal y pimienta. En una sartén antiadherente a fuego bajo, haz 4 tortillas (3 huevos cada una) plegadas al tamaño del bagel, 3–4 min cada una.",
+         "Monta: bagel abierto + 15 g de cream cheese + tortilla. Deja enfriar, envuelve cada uno en film y al congelador.",
+         "Reparte albóndigas con salsa y ~330 g de arroz cocido en 4 raciones (3 tuppers + tu almuerzo de hoy)."
+        ],
+        "storage": "Nevera: albóndigas hasta el miércoles. Congelador: bagels hasta 1 mes (pasa el del día siguiente a la nevera por la noche)."
+       },
+       "3": {
+        "title": "Meal prep del miércoles",
+        "when": "Por la noche · 45 min",
+        "makes": [
+         "Muslos a la paprika con papas x3: cena de hoy + almuerzos del jueves y viernes"
+        ],
+        "groups": [
+         {
+          "name": "Muslos a la paprika (x3)",
+          "items": [
+           "600 g de muslos de pollo sin hueso",
+           "1,5 kg de papas",
+           "450 g de brócoli",
+           "1,5 cdas de aceite",
+           "2 cdtas de pimentón, ajo en polvo, sal"
+          ]
+         }
+        ],
+        "steps": [
+         "Marina los muslos con pimentón, ajo, sal y 1 cdta de aceite.",
+         "Fuego 1: hierve las papas en cubos 10 min y escúrrelas.",
+         "Airfryer: muslos 18–20 min a 190 °C, volteando a mitad. Sácalos y mete las papas con el resto del aceite, 15 min a 200 °C hasta que estén crujientes.",
+         "Fuego 2: brócoli al vapor 5 min.",
+         "Sirve tu cena y reparte el resto en 2 tuppers."
+        ],
+        "storage": "Nevera: hasta el viernes."
+       }
       },
-      {
-       "name": "Garbanzos crujientes",
+      "shopping": {
+       "title": "Lista de compra",
        "items": [
-        "1 lata de garbanzos",
-        "1 cdta de aceite",
-        "Pimentón ahumado, ajo en polvo, sal"
-       ]
-      },
-      {
-       "name": "Frasco del viernes",
-       "items": [
-        "250 g de cottage cheese",
-        "150 g de frutos rojos congelados"
+        {
+         "cat": "Proteína",
+         "name": "Pechuga de pollo",
+         "qty": "200 g",
+         "price": 1.36
+        },
+        {
+         "cat": "Proteína",
+         "name": "Muslos de pollo sin hueso",
+         "qty": "600 g",
+         "price": 4.8
+        },
+        {
+         "cat": "Proteína",
+         "name": "Carne molida",
+         "qty": "750 g",
+         "price": 6.75
+        },
+        {
+         "cat": "Proteína",
+         "name": "Huevos",
+         "qty": "29",
+         "price": 8.12
+        },
+        {
+         "cat": "Proteína",
+         "name": "Cottage cheese",
+         "qty": "1 × 200 g",
+         "price": 1.1
+        },
+        {
+         "cat": "Proteína",
+         "name": "Cream cheese",
+         "qty": "1 × 200 g",
+         "price": 1.2
+        },
+        {
+         "cat": "Proteína",
+         "name": "Atún al natural",
+         "qty": "2 latas",
+         "price": 3.0
+        },
+        {
+         "cat": "Proteína",
+         "name": "Garbanzos",
+         "qty": "2 latas",
+         "price": 1.6
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Arroz",
+         "qty": "550 g (si no te queda)",
+         "price": 0.95
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Pasta",
+         "qty": "1 × 500 g",
+         "price": 1.0
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Papas",
+         "qty": "2,5 kg",
+         "price": 2.56
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Pan integral",
+         "qty": "2 × 750 g",
+         "price": 3.6
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Bagels",
+         "qty": "2 paquete(s) de 4 (6 esta semana)",
+         "price": 3.6
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Paprika",
+         "qty": "3",
+         "price": 2.1
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Cebolla",
+         "qty": "0,5 kg",
+         "price": 0.56
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Zucchini",
+         "qty": "1",
+         "price": 0.7
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Tomates cherry",
+         "qty": "750 g",
+         "price": 2.85
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Brócoli",
+         "qty": "2",
+         "price": 2.8
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Tomate triturado",
+         "qty": "3 × 500 g",
+         "price": 2.1
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Frutos rojos congelados",
+         "qty": "1 bolsa (dura varias semanas)",
+         "price": 2.5
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Manzanas",
+         "qty": "2",
+         "price": 0.7
+        },
+        {
+         "cat": "Despensa",
+         "name": "Aceite, miel, soja y especias",
+         "qty": "reponer cuando falte",
+         "price": 2.5
+        }
        ]
       }
-     ],
-     "steps": [
-      "Fuego 1: arroz (240 g) según el paquete.",
-      "Fuego 2: dora la carne con la cebolla 6–8 min, sin aceite. Si suelta mucha grasa, escúrrela.",
-      "Añade paprika, ajo y especias, 2 min. Luego tomate y frijoles; 20 min a fuego bajo, removiendo de vez en cuando.",
-      "Airfryer, mientras tanto: garbanzos bien secos con aceite y especias, 15 min a 200 °C, agitando a mitad.",
-      "Frasco: pon el cottage y encima los frutos rojos congelados; tapa y a la nevera (se descongelan solos).",
-      "Sirve tu cena y reparte el resto en 2 tuppers (jueves y viernes). Garbanzos en un táper sin cerrar del todo."
-     ],
-     "storage": "Nevera: chili hasta el viernes (también se congela), frasco hasta el viernes."
-    }
-   },
-   "shopping": {
-    "title": "Lista de compra",
-    "items": [
-     {
-      "cat": "Proteína",
-      "name": "Pechuga de pollo",
-      "qty": "700 g",
-      "price": 5.6
      },
      {
-      "cat": "Proteína",
-      "name": "Muslos de pollo sin hueso",
-      "qty": "1 bandeja (~400 g; congela la mitad)",
-      "price": 3.2
-     },
-     {
-      "cat": "Proteína",
-      "name": "Carne molida",
-      "qty": "550 g",
-      "price": 5.0
-     },
-     {
-      "cat": "Proteína",
-      "name": "Huevos",
-      "qty": "18",
-      "price": 5.0
-     },
-     {
-      "cat": "Proteína",
-      "name": "Cottage cheese",
-      "qty": "5 × 200 g",
-      "price": 5.5
-     },
-     {
-      "cat": "Proteína",
-      "name": "Cream cheese",
-      "qty": "2 × 200 g",
-      "price": 2.4
-     },
-     {
-      "cat": "Proteína",
-      "name": "Atún al natural",
-      "qty": "2 latas",
-      "price": 3.0
-     },
-     {
-      "cat": "Proteína",
-      "name": "Garbanzos",
-      "qty": "4 latas",
-      "price": 3.2
-     },
-     {
-      "cat": "Proteína",
-      "name": "Frijoles rojos (kidney)",
-      "qty": "2 latas",
-      "price": 1.6
-     },
-     {
-      "cat": "Carbohidratos",
-      "name": "Arroz",
-      "qty": "1 kg",
-      "price": 1.8
-     },
-     {
-      "cat": "Carbohidratos",
-      "name": "Bagels",
-      "qty": "2 paquetes (6 esta semana)",
-      "price": 3.6
-     },
-     {
-      "cat": "Carbohidratos",
-      "name": "Pan integral",
-      "qty": "1 grande",
-      "price": 1.8
-     },
-     {
-      "cat": "Carbohidratos",
-      "name": "Papas",
-      "qty": "1,5–2 kg",
-      "price": 2.5
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Paprika",
-      "qty": "4",
-      "price": 2.7
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Cebolla",
-      "qty": "1 kg",
-      "price": 1.3
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Zucchini",
-      "qty": "1",
-      "price": 0.7
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Tomates cherry",
-      "qty": "500 g",
-      "price": 1.9
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Brócoli",
-      "qty": "1",
-      "price": 1.4
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Verduras congeladas",
-      "qty": "1 bolsa de 750 g",
-      "price": 1.8
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Tomate triturado",
-      "qty": "3 × 500 g",
-      "price": 2.0
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Frutos rojos congelados",
-      "qty": "1 bolsa (dura 2–3 semanas)",
-      "price": 2.5
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Bananas",
-      "qty": "12",
-      "price": 2.2
-     },
-     {
-      "cat": "Verdura y fruta",
-      "name": "Manzanas",
-      "qty": "3",
-      "price": 1.5
-     },
-     {
-      "cat": "Despensa",
-      "name": "Aceite, miel, soja, curry y especias",
-      "qty": "reponer cuando falte",
-      "price": 2.5
+      "name": "Menú C",
+      "days": {
+       "7": [
+        {
+         "slot": "Desayuno",
+         "time": "9:30",
+         "meal": "huevos-tostadas"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "guiso-hoy"
+        },
+        {
+         "slot": "Merienda",
+         "time": "17:00",
+         "meal": "cottage-frutos"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "empanizada"
+        }
+       ],
+       "1": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins-champi"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "guiso-garbanzos"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "sandwich-atun"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "papa-atun"
+        }
+       ],
+       "2": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins-champi"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "guiso-garbanzos"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "tostadas-huevo"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "arroz-frito"
+        }
+       ],
+       "3": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins-champi"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "guiso-garbanzos"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "bagel-cc-manzana"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "bolonesa-cena"
+        }
+       ],
+       "4": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "egg-muffins-champi"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "bolonesa"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "tostadas-huevo"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "batata-pollo"
+        }
+       ],
+       "5": [
+        {
+         "slot": "Pre-entreno",
+         "time": "6:30",
+         "meal": "pre-entreno"
+        },
+        {
+         "slot": "Desayuno",
+         "time": "8:30",
+         "meal": "bagel-atun"
+        },
+        {
+         "slot": "Almuerzo",
+         "time": "13:30",
+         "meal": "bolonesa"
+        },
+        {
+         "slot": "Merienda",
+         "time": "16:30",
+         "meal": "bagel-cc-manzana"
+        },
+        {
+         "slot": "Cena",
+         "time": "19:30",
+         "meal": "smash-burger"
+        }
+       ],
+       "6": {
+        "free": true,
+        "title": "Día libre del menú",
+        "text": "Hoy comes y cocinas lo que quieras. Es día de súper: abajo tienes la lista para el menú que empieza mañana."
+       }
+      },
+      "prep": {
+       "7": {
+        "title": "Meal prep del domingo",
+        "when": "~11:00 · 1 h",
+        "makes": [
+         "Guiso de garbanzos x4: almuerzo de hoy + lunes, martes y miércoles",
+         "12 egg muffins de champiñones: desayunos de lunes a jueves",
+         "Arroz para el arroz frito del martes"
+        ],
+        "groups": [
+         {
+          "name": "Guiso de garbanzos con pollo (x4)",
+          "items": [
+           "600 g de pechuga en dados",
+           "2 latas de garbanzos, escurridos",
+           "1 kg de papas en cubos",
+           "480 g de tomate triturado",
+           "2 paprikas",
+           "2 cebollas",
+           "1,5 cdas de aceite",
+           "2 cdtas de pimentón ahumado, 1 cdta de comino, 1 hoja de laurel, 3 dientes de ajo, sal",
+           "500 ml de agua"
+          ]
+         },
+         {
+          "name": "Arroz",
+          "items": [
+           "100 g de arroz (para el martes)"
+          ]
+         },
+         {
+          "name": "Egg muffins de champiñones y zucchini (x12)",
+          "items": [
+           "12 huevos",
+           "160 g de champiñones picados",
+           "1/2 zucchini rallado",
+           "Sal, pimienta y ajo en polvo",
+           "12 moldes de silicona"
+          ]
+         }
+        ],
+        "steps": [
+         "Muffins: saltea champiñones y zucchini 4 min para que suelten el agua. Bate los huevos con sal, pimienta y ajo, mezcla las verduras y reparte en los moldes. Airfryer 12–15 min a 160 °C.",
+         "Fuego 2 (olla grande): aceite, cebolla y paprika picadas 5 min; añade el pollo, el ajo y las especias, 5 min.",
+         "Añade papas, tomate, garbanzos, laurel y el agua. 25 min a fuego medio-bajo, hasta que la papa esté tierna y el caldo espese.",
+         "Fuego 1: arroz (100 g) para el martes; guárdalo en un táper.",
+         "Reparte el guiso en 4 raciones (3 tuppers + tu almuerzo de hoy)."
+        ],
+        "storage": "Nevera: guiso hasta el miércoles (mejora de un día para otro), muffins hasta el jueves."
+       },
+       "3": {
+        "title": "Meal prep del miércoles",
+        "when": "Por la noche · 30 min",
+        "makes": [
+         "Pasta boloñesa x3: cena de hoy + almuerzos del jueves y viernes"
+        ],
+        "groups": [
+         {
+          "name": "Pasta boloñesa (x3)",
+          "items": [
+           "390 g de pasta",
+           "420 g de carne molida",
+           "600 g de tomate triturado",
+           "1 zucchini",
+           "300 g de champiñones",
+           "1 cebolla",
+           "Orégano, ajo, sal"
+          ]
+         }
+        ],
+        "steps": [
+         "Fuego 1: pasta, retírala 1 min antes de lo que dice el paquete (termina al recalentar).",
+         "Fuego 2: dora la carne con la cebolla 6–8 min; añade zucchini y champiñones picados finos, 4 min.",
+         "Añade tomate, orégano y ajo; 15 min a fuego bajo.",
+         "Mezcla con la pasta, sirve tu cena y reparte el resto en 2 tuppers."
+        ],
+        "storage": "Nevera: hasta el viernes."
+       }
+      },
+      "shopping": {
+       "title": "Lista de compra",
+       "items": [
+        {
+         "cat": "Proteína",
+         "name": "Pechuga de pollo",
+         "qty": "1050 g",
+         "price": 8.32
+        },
+        {
+         "cat": "Proteína",
+         "name": "Carne molida",
+         "qty": "600 g",
+         "price": 5.13
+        },
+        {
+         "cat": "Proteína",
+         "name": "Huevos",
+         "qty": "20",
+         "price": 5.6
+        },
+        {
+         "cat": "Proteína",
+         "name": "Cottage cheese",
+         "qty": "1 × 200 g",
+         "price": 1.1
+        },
+        {
+         "cat": "Proteína",
+         "name": "Cream cheese",
+         "qty": "2 × 200 g",
+         "price": 2.4
+        },
+        {
+         "cat": "Proteína",
+         "name": "Atún al natural",
+         "qty": "3 latas",
+         "price": 4.5
+        },
+        {
+         "cat": "Proteína",
+         "name": "Garbanzos",
+         "qty": "3 latas",
+         "price": 2.4
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Arroz",
+         "qty": "100 g (si no te queda)",
+         "price": 0.18
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Pasta",
+         "qty": "1 × 500 g",
+         "price": 1.0
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Papas",
+         "qty": "2,0 kg",
+         "price": 2.5
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Batata",
+         "qty": "350 g",
+         "price": 0.88
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Pan integral",
+         "qty": "2 × 750 g",
+         "price": 3.6
+        },
+        {
+         "cat": "Carbohidratos",
+         "name": "Bagels",
+         "qty": "2 paquete(s) de 4 (8 esta semana)",
+         "price": 3.6
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Paprika",
+         "qty": "3",
+         "price": 2.1
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Cebolla",
+         "qty": "0,5 kg",
+         "price": 0.53
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Zucchini",
+         "qty": "2",
+         "price": 1.4
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Tomates cherry",
+         "qty": "500 g",
+         "price": 1.9
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Brócoli",
+         "qty": "1",
+         "price": 1.4
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Champiñones",
+         "qty": "750 g",
+         "price": 3.6
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Verduras congeladas",
+         "qty": "1 bolsa de 750 g",
+         "price": 1.8
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Tomate triturado",
+         "qty": "3 × 500 g",
+         "price": 2.1
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Frutos rojos congelados",
+         "qty": "1 bolsa (dura varias semanas)",
+         "price": 2.5
+        },
+        {
+         "cat": "Verdura y fruta",
+         "name": "Manzanas",
+         "qty": "3",
+         "price": 1.05
+        },
+        {
+         "cat": "Despensa",
+         "name": "Aceite, miel, soja y especias",
+         "qty": "reponer cuando falte",
+         "price": 2.5
+        }
+       ]
+      }
      }
     ]
    }
